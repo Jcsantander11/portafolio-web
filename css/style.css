@@ -1,0 +1,409 @@
+h1, h2,h3, h4 {
+    font-family: "Outfit", sans-serif;
+    color: black;
+  }
+
+i{
+color: rgb(126, 126, 126);
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    color: rgb(70, 70, 70);
+  }
+
+h2{
+    font-size: 50px;
+}
+
+  /*Navbar*/
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav__portafolio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(122, 122, 175);
+    font-size: 25px;
+    padding: 25px 0px;
+    color: white;
+}
+
+.nombre__nav, .opciones__nav li{
+    align-items: center;
+    display: flex;
+}
+.opciones, .nombre__nav p{
+    margin-left: 30px;
+}
+
+.opciones a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.nombre__nav:hover p, .opciones:hover{
+    scale: 130%;
+    transition: 700ms;
+    color: white;
+    background-color:rgb(144, 144, 189) ;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
+/*Seccion Informacion*/
+.mi__presentacion{
+    justify-content: space-evenly;
+    padding: 80px 0px;
+    align-items: center;
+}
+
+.mi__presentacion h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .mi__presentacion img{
+        padding-top: 40px;
+    }
+    #quien__soy img{
+        padding: 0%;
+        padding: 20px 0px 30px 0px;
+    }
+    #quien__soy{
+        text-align: justify;
+    }
+    .mi__presentacion{
+        padding: 30px 0px 40px 0px;
+    }
+}
+/*Seccion Proyectos*/
+
+.op__eventos, .mi__presentacion{
+    border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+.op__eventos{
+    padding: 80px 0px;
+}
+
+.op__eventos h2{
+    padding: 0px 0px 0px 6%;
+}
+
+.cartas h2, p{ 
+    padding: 0px;
+    text-align: justify;
+}
+
+.sub__titulo{
+    text-align: center;
+    font-size: 35px;
+    padding: 2% 0px 4% 0px;
+}
+
+.sub__titulo:hover{
+    animation-name: salto;
+    animation-duration: 0.5s; /* Duración del salto */
+    animation-timing-function: ease-in-out; /* Función de sincronización (opcional) */
+    animation-iteration-count: infinite; /* Cantidad de repeticiones (infinitas en este caso) */
+    
+}
+
+@keyframes salto {
+    0% {
+      transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateY(-10px); /* Altura máxima del salto */
+    }
+    100% {
+      transform: translateY(0); /* Volver a la posición inicial */
+    }
+  }
+
+#habilidades__soft{
+    margin-bottom: 5%;
+}
+
+#habilidades__ux{
+    padding: 5% 0px;
+    border-top: 2px solid rgb(165, 165, 165);
+}
+
+.cartas a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.cartas a:hover{
+    color: blue;
+}
+
+.cartas h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/*Footer*/
+.footer{
+    display: flex;
+    background-color: rgb(122, 122, 175);
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    padding: 25px;
+    box-shadow: 0px -1px 5px rgb(168, 168, 168);
+    color: white;
+}
+
+.redes, .redes img{
+    display: flex;
+    margin-left: 15px;
+}
+
+.interaccion:hover{
+    scale: 110%;
+}
+
+/*Pagina Sobre mi*/
+
+#resumen__descripcion{
+    padding: 50px 20px;
+    border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+.imagen__sobremi img{
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px;
+}
+
+.descripcion__sobremi{
+    text-align: justify;
+    padding: 80px 0px 50px 0px;
+    padding-top: 100px 0px 40px 0px;
+}
+
+.titulos{
+    text-align: center;
+}
+
+/*Logros*/
+
+#educacion__descripcion, #contacto__descripcion, #habilidades__descripcion{
+    padding: 100px 50px;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    text-align: justify;
+}
+.logros{
+    color: inherit;
+    text-decoration: none;
+}
+
+.logros:hover{
+    color: blue;
+}
+
+
+/*Habilidades*/
+
+.habilidades{
+    justify-content: space-evenly;
+    padding: 0px 20px;
+}
+
+.habilidades img{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0.5px solid rgb(187, 187, 187);
+}
+
+.cartas{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cartas h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cartas:hover{
+    scale: 110%;
+    transition: 800ms;
+    border-color: green;
+    border: 2px solid green;
+}
+
+.cartas img{
+    height: 200px;
+    width: 100%;
+}
+
+
+
+/*@media*/
+@media (max-width: 800px) {
+    .opciones__nav ul{
+       display: none;
+    }
+    .nombre__nav{
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.contenedores{
+    padding: 0px 10%;
+}
+
+.mi__descripcion{
+    font-size: 27px;
+}
+
+
+@media (max-width: 1200px) {
+    .contenedores{
+        padding: 0px 5%;
+    }
+    .titulo__principial{
+        font-size: 30px;
+    }
+    .mi__descripcion{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media (max-width: 1000px) {
+    .contenedores{
+        padding: 0px 3%;
+    }
+    .op__eventos h2{
+        text-align: center;
+    }
+    a{
+        font-size: 27px;
+    }
+    p, #uno{
+        font-size: 20px;
+    }
+
+    #quien__soy{
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .contenedores{
+        padding: 0px 1%;
+    }
+    a{
+        font-size: 27px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2, .mi__presentacion h2{
+        font-size: 35px;
+    }
+    .habilidades h3{
+        font-size: 25px;
+    }
+
+    .cartas{
+        padding: 2%;
+    }
+
+    .cartas img, .cartas h2{
+        margin: 0px;
+    }
+
+    .cartas img{
+        padding: 2% 2% 2% 2%;
+    }
+    .op__eventos h2{
+        text-align: center;
+    }
+    .op__eventos{
+        padding: 7% 0%;
+    }
+    .titulo__principial{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 575px){
+    .contenedores{
+        padding: 0% 10%;
+    }
+    .habilidades{
+        padding: 3%;
+    }
+    .cartas{
+        padding: 6%;
+    }
+    .op__eventos{
+        padding: 10% 0%;
+    }
+    .diseñado__por p{
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .mi__presentacion h2{
+        text-align: center;
+    }
+    .img__principal{
+        text-align: center;
+    }
+}
+
+/*Sobre Mi*/
+strong{
+    color: rgb(52, 52, 122);
+}
+
+#quien__soy h2{
+    text-align: center;
+}
+
+#mis__hab{
+    text-align: center;
+}
+
+.diseñado__por{
+    display: flex;
+    align-items: center;
+}
+
+.diseñado__por img{
+    margin-right: 10px;
+}
+
+.titulo__principial{
+    margin: 0px;
+}
+
+.nombre__nav p{
+    margin-left: 10px;
+}
