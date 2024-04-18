@@ -71,6 +71,10 @@ header{
 }
 
 @media (max-width: 800px) {
+    .mi__presentacion{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
     .mi__presentacion img{
         padding-top: 40px;
     }
@@ -110,13 +114,6 @@ header{
     padding: 2% 0px 4% 0px;
 }
 
-.sub__titulo:hover{
-    animation-name: salto;
-    animation-duration: 0.5s; /* Duración del salto */
-    animation-timing-function: ease-in-out; /* Función de sincronización (opcional) */
-    animation-iteration-count: infinite; /* Cantidad de repeticiones (infinitas en este caso) */
-    
-}
 
 @keyframes salto {
     0% {
@@ -262,14 +259,15 @@ header{
 
 /*@media*/
 @media (max-width: 800px) {
-    .opciones__nav ul{
-       display: none;
+
+    .opciones__nav{
+       overflow: scroll;
+       white-space: nowrap;
     }
-    .nombre__nav{
-        display: flex;
-        margin: auto;
-        text-align: center;
+    .nombre__nav a{
+        display: none;
     }
+
 }
 
 .contenedores{
@@ -381,6 +379,22 @@ header{
     }
     .img__principal{
         text-align: center;
+    }
+    .opciones__nav a{
+        font-size: 23px;
+    }
+
+    .opciones{
+        margin: 0;
+    }
+
+    .scroll{
+        display: flex;
+        gap: 12px;
+    }
+    
+    .opciones__nav{
+        overflow: none;
     }
 }
 
