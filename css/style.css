@@ -256,6 +256,63 @@ header{
 }
 
 
+/*Contacto*/
+
+.datos__contacto{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 7% 0px;
+}
+
+.mensaje img{
+    margin-top: 20px;
+    border-radius: 20px;
+ 
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 5%;
+    border-left: 1px solid gray;
+}
+
+.contacto h3{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.contacto label, .contacto input{
+    font-size: 25px;
+    color: rgb(70, 70, 70);
+}
+
+.contacto label{
+    color: black;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto button{
+    background-color: rgb(35, 129, 35);
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+.contacto button:hover{
+    scale: 105%;
+}
+
+.contacto button:active{
+    font-size: 20px;
+    scale: 90%;
+}
 
 /*@media*/
 @media (max-width: 800px) {
@@ -267,6 +324,28 @@ header{
     .nombre__nav a{
         display: none;
     }
+    .datos__contacto{
+        padding: 0px 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img__contacto {
+        width: 70%;
+        
+    }
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .contacto{
+        border: none;
+        border-top: 1px solid gray;
+    }
+
 
 }
 
@@ -296,6 +375,25 @@ header{
 
 
 @media (max-width: 1000px) {
+    .datos__contacto{
+        padding: 0px 10%;
+    }
+    .img__contacto {
+        width: 70%;
+        
+    }
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .contacto{
+        border: none;
+        border-top: 1px solid gray;
+    }
+
     .contenedores{
         padding: 0px 3%;
     }
@@ -305,7 +403,7 @@ header{
     a{
         font-size: 27px;
     }
-    p, #uno, .correo{
+    p, #uno, .correo, .mensaje a{
         font-size: 20px;
     }
 
@@ -369,6 +467,35 @@ header{
     }
     .diseñado__por p{
         text-align: left;
+    }
+    .datos__contacto{
+        padding: 0px 2%;
+    }
+    .img__contacto {
+        width: 100%;
+        
+    }
+    .contacto label, .contacto input{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 3px;
+    }
+
+    .contacto h3{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .contacto{
+        border: none;
+        border-top: 1px solid gray;
     }
 }
 

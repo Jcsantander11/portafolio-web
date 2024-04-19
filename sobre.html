@@ -128,14 +128,33 @@
 
         <!--Seccion Contactame-->
         <section class="contenedores">
-            <div class="row mi__presentacion" id="quien__soy">
-                <div class="col-lg-12 col-md-8 col-sm-8 col-12">
+
+            <div class="row datos__contacto">
+                <div class="col-lg-5 mensaje">
                     <h2 class="titulos">Contactame!</h2><br>
-                <p>Si te interese saber más sobre mi y mis proyectos, no dudes en ponerte en contacto 
-                    conmigo a través de <a href="mailto: jcsantander@unimayor.edu.co" class="correo">correo electronico</a> para discutir cómo puedo ayudarte a 
-                    alcanzar tus objetivos tecnológicos y de diseño.</p>
+                    <p>Si te interese saber más sobre cómo puedo ayudarte a 
+                        alcanzar tus objetivos tecnológicos y de diseño, no dudes en ponerte en contacto 
+                        conmigo a través del siguiente formulario o a traves del siguiente enlace <a href="">Email</a></p>
+                    <a href="mailto:jcsantander@unimayor.edu.co"><img src="img/contacto.jpg" alt="" class="img-fluid img__contacto" width="100%"></a>
                 </div>
-                
+                <div class="col-lg-5 contacto" >
+                    <h3>Formulario de Contacto</h3>
+                    <form action="procesar.js" method="post" class="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Juanito Perez" maxlength="50" minlength="4"><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="alguien@gmail.com" maxlength="20"><br>
+
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required maxlength="50"><br>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required maxlength="300"></textarea><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
         </section>
 
