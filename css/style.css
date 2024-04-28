@@ -65,6 +65,11 @@ header{
     align-items: center;
 }
 
+.lema{
+    text-align: center;
+    font-size: 25px;
+}
+
 .mi__presentacion h2{
     font-size: 50px;
     padding-bottom: 20px;
@@ -407,7 +412,7 @@ header{
     a{
         font-size: 27px;
     }
-    p, #uno, .correo, .mensaje a{
+    p, #uno, .correo, .mensaje a, .lema{
         font-size: 20px;
     }
 
@@ -426,6 +431,10 @@ header{
     }
     p{
         font-size: 20px;
+    }
+    .lema{
+        font-size: 17px;
+        text-align: center;
     }
     h2, .mi__presentacion h2{
         font-size: 35px;
@@ -558,3 +567,4 @@ strong{
 .nombre__nav p{
     margin-left: 10px;
 }
+
